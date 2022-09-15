@@ -13,6 +13,12 @@ const productos = [
     ];
 console.log(productos);
 
+// el cliente ve la lista de productos mediante la consola
+let lista = prompt ("escriba 'lista de productos'")
+for(const item of productos){
+    console.log (item)
+}
+
 //hacemos la funcion donde el cliente obtiene un descuento según el metodo de pago
 const precioFinal = (metedoPago) => {
     console.log(metedoPago)
@@ -32,12 +38,12 @@ const precioFinal = (metedoPago) => {
 let nombre = prompt ("ingrese el nombre producto")
 let producto = productos.find(item => item.nombre === nombre);
 console.log (producto)
-let mensaje = `
+let mensaje2 = `
 Id: ${producto.idProducto}
 Nombre: ${producto.nombre}
 Precio: $${producto.precio}
 `;
-alert(mensaje);
+alert(mensaje2);
 
 //el cliente elige el metodo de pago
 let metedoPago = prompt ("ingrese metedo de pago 'efectivo o tarjeta'")
