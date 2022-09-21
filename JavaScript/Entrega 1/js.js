@@ -50,4 +50,3 @@ let metedoPago = prompt ("ingrese metedo de pago 'efectivo o tarjeta'")
 let descuento
 console.log(metedoPago)
 precioFinal (metedoPago)
-
